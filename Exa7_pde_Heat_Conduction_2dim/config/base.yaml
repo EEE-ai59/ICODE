@@ -1,0 +1,36 @@
+
+#type: args
+
+train:
+  num_epochs: 150 # 8000 ### 15
+  num_epochs_show: 1
+  lrList: [5.0e-4]
+  n_seq: 10
+  train_len: 50
+  test_len: 25
+  T_end: 1
+  USE_BASIC_SOLVER: True
+
+model:
+  hidden_dim: 60
+  num_layers: 3
+  augment_dim: 1
+  aug_ini_hiddendim: 1
+
+input:
+  tSwitchPoint: [0.1, 0.4, 0.8] # [0.1, 0.4, 0.5, 0.8, 0.9, 1.2] # 1
+  tSwitchLen: 0.3
+  xVal: [-0.5, 0.5]
+
+select_model:
+  my: 1
+  CDE: 1
+  NeuralODE: 1
+  AugNeuralODE: 1
+
+select_metrics:
+  mse: 1
+  absErr: 1
+  maxErr: 0
+
+

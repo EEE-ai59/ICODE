@@ -1,0 +1,2 @@
+In each example folder, you can run the main.py to conduct the experiment. Change the variable Loop therein to determine the times you want to experiment. The file main.py will firstly call experiment.py to do the experiemnts (the results will be saved in folder experimentData), and then it will call Draw.py to draw the resluts and print the average loss in different metrics.
+All the hyperparameters are in config/base.yaml in each exapmle folder .
